@@ -1,0 +1,1 @@
+export { NavBasePillsTextWrapper } from "./NavBasePillsTextWrapper";
