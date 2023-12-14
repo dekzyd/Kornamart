@@ -12,15 +12,16 @@ const ImageSlider = ({ images }) => {
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
   };
   return (
     <>
       <div className="imgslider">
         <Slider {...settings}>
-          {images.map((item) => (
-            <div key={item.id} className="lg:h-[374px] object-contain">
-              <img src={item.src} alt={item.alt} />
+          {images.map((item, index) => (
+            <div key={index} className="lg:h-[374px] object-contain ">
+              {/* <img src={item.src} alt={item.alt} className="rounded" /> */}
+              <img src={item} alt="image" className="rounded" />
             </div>
           ))}
         </Slider>

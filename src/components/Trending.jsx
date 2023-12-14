@@ -6,9 +6,11 @@ import ImageSlider from "./ImageSlider";
 import Images from "./Images";
 import { useLoaderData, Link } from "react-router-dom";
 
+const categories = ["all", "tables", "chairs", "kids", "sofa", "beds"];
+
 const Trending = () => {
-  const { meta } = useLoaderData();
-  const { categories } = meta;
+  // const { meta } = useLoaderData();
+  // const { categories } = meta;
   return (
     <div className="pb-10">
       {/* categories */}
@@ -26,7 +28,7 @@ const Trending = () => {
           </ul>
         </div>
         {/* slider */}
-        <div className="relative h-[380px] w-3/5 p-2">
+        <div className="relative h-[380px] w-3/5">
           <div className="bg-black h-20 w-72 absolute left-8 top-11 z-30 opacity-20 rounded-md"></div>
           <div className="absolute z-40 left-10 top-10 text-white h-32">
             <p className="text-2xl font-medium tracking-wide py-1">

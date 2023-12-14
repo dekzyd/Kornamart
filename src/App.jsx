@@ -14,6 +14,7 @@ import {
   Products,
   Register,
   SingleProduct,
+  Admin,
 } from "./pages";
 import { ErrorElement } from "./components";
 
@@ -50,7 +51,6 @@ const router = createBrowserRouter([
         element: <Landing />,
         errorElement: <ErrorElement />,
         loader: landingLoader(queryClient),
-        loader: allProductsLoader(queryClient),
       },
       {
         path: "products",
@@ -82,6 +82,11 @@ const router = createBrowserRouter([
         path: "orders",
         element: <Orders />,
         loader: ordersLoader(store, queryClient),
+      },
+      {
+        path: "admin",
+        element: <Admin />,
+        // loader: ordersLoader(store, queryClient),
       },
     ],
   },

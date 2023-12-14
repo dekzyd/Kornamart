@@ -17,8 +17,8 @@ export const loader = (queryClient) => async () => {
 const Landing = () => {
   return (
     <div>
-      <Trending />
-      {/* <Hero /> */}
+      {/* <Trending /> */}
+      <Hero />
       <FeaturedProducts />
     </div>
   );
